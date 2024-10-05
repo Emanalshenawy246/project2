@@ -1,0 +1,541 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@font-face{
+    font-family: oswald;
+    src: url(../fonts/Oswald/Oswald-VariableFont_wght.ttf);
+}
+
+@font-face{
+    font-family: opensans;
+    src: url(../fonts/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf);
+}
+ /*start of nav */
+   nav{
+    background-color: black;
+   }
+   nav a{
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    padding: 12px 15px;
+   }
+nav a:last-child{
+    float: right;
+}
+nav a:hover{
+    background-color: #ccc;
+    color: black;
+}
+/* end of nav */
+/*star textbox*/
+#textbox{
+    text-align: center;
+    padding: 60px 0px ;
+    font-family: oswald;
+
+}
+#textbox h1{
+    font-size: 3rem;/*يعني بضربه في 2*/
+
+}
+#textbox p{
+    font-size: 1rem;
+
+}
+#textbox p span{
+    background-color: black;
+    color: white;
+    padding: 0px 10px;
+
+}
+/*end textbox*/
+/*start header*/
+header{
+    position: relative;
+
+}
+header #aboveimg{
+    position: absolute;
+    top:35%;
+    left: 50px;
+    color: white;
+    font-family: oswald;
+
+}
+header #aboveimg h2{
+    font-size: 2.5rem;
+    line-height: 54px;
+    letter-spacing: 3px;
+
+}
+header #aboveimg h1{
+    font-size: 4rem;
+    line-height: 96px;
+    letter-spacing: 5px;
+
+}
+header #aboveimg button{
+    padding:12px 22px ;
+    font-size: 1.2rem;
+    border: none;
+    background-color: rgba(138, 138, 138, 0.8);
+
+}
+header #aboveimg button:hover{
+   background-color: rgb(226, 226, 226);
+
+}
+
+
+/*end header*/
+/*start main*/
+main{
+    background-color: #f1f1f1;
+
+}
+/*start #leftside*/
+main #leftside{
+    float: left;
+    width: 70%;
+    background-color: #f1f1f1;
+    padding: 20px;
+
+
+}
+main #leftside article{
+    padding: 20px 30px;
+    background-color: #ffffff;
+    margin-bottom: 20px ;
+    
+}
+main #leftside article .articletitle{
+    text-align: center;
+    font-size:1.3rem;
+    font-family:oswald ;
+    padding-bottom: 15px;
+}
+main #leftside article .articledesc{
+    text-align: center;
+    font-family:oswald ;
+    padding-bottom: 25px;
+}
+main #leftside article .articledesc span{
+   color: silver;
+}
+main #leftside article .articlecontent{
+    font-family: opensans;
+    text-align: justify;
+    line-height: 23px;
+    font-size: 15px;
+}
+main #leftside article .articlecontent p{
+    padding: 20px 0px;
+}
+main #leftside article .articlebutton {
+    padding-bottom: 20px;
+
+}
+main #leftside article .articlebutton .leftb{
+    float: left;
+    background-color: white;
+   
+    padding: 8px 13px;
+    border: 1px solid gray;
+    font-weight: bold;
+    
+}
+main #leftside article .articlebutton .leftb:hover{
+    background-color: silver;
+    border-color: silver;
+
+}
+main #leftside article .articlebutton .rightb{
+    float: right;
+    background-color: black;
+    color: white;
+    padding: 8px 13px;
+    border: black;
+    font-weight: bold;
+
+}
+main #leftside article .articlebutton .rightb:hover{
+    background-color:silver ;
+    border: silver;
+    color: black;
+
+
+
+}
+main #leftside article .articlebutton .rightb span{
+   
+    background-color: white;
+    color: black;
+    padding: 0px 8px ;
+    
+}
+.hr{
+    border-bottom: 1px solid gray;
+}
+main #leftside article .articlefooter{
+    padding: 20px 0px;
+}
+main #leftside article .articlefooter .lefts{
+    float: left;
+    width: 15%;
+    padding:10px ;
+
+}
+
+main #leftside article .articlefooter .rights{
+    float: right;
+    width: 85%;
+    padding:10px ;
+
+}
+main #leftside article .articlefooter .rights p{
+    padding-bottom: 20px;
+    font-size: 1.1rem;
+}
+main #leftside article .articlefooter .rights p span{
+    color: silver;
+}
+/*main #leftside article   #secondfooter, main #leftside article   #thirdfooter{
+    display: none;
+
+
+
+}*/
+/*end leftside*/
+/*start rightside*/
+main #rightside{
+float: right;
+width: 30%;
+background-color: #f1f1f1;
+padding: 20px 0px;
+
+}
+main #rightside .rightinter {
+
+
+}
+main #rightside .rightinter p{
+    background-color: black;
+    color: white;
+    margin-top: -10px;
+    font-size: 15px;
+    font-family: opensans;
+    line-height: 23px;
+    padding: 5px 10px;
+
+}
+main #rightside .rightsections{
+    margin: 20px 0px;
+
+}
+main #rightside .rightsections h3{
+    
+    background-color: black;
+    color: white;
+    padding: 20px;
+    font-family: oswald;
+    font-weight: normal;
+}
+main #rightside .rightsections .sectioncontent{
+    background-color: white;
+    
+}
+
+/*posts*/
+main #rightside .rightsections #posts{
+
+}
+main #rightside .rightsections #posts ul{
+    padding:0px ;
+    list-style-type: none;
+
+    
+}
+main #rightside .rightsections #posts ul li{
+    padding: 10px;
+    border-top: 1px solid silver;
+}
+main #rightside .rightsections #posts ul li:hover{
+    background-color: silver;
+    
+}
+main #rightside .rightsections #posts ul li .lefts{
+    float: left;
+    width: 15%;
+
+
+}
+main #rightside .rightsections #posts ul li .rights{
+    float: right;
+    width: 85%;
+    
+
+}
+main #rightside .rightsections #posts ul li .rights p{
+    padding: 7px 12px;
+}
+
+/*Advertise*/
+main #rightside .rightsections #Advertise{
+padding: 20px;
+}
+main #rightside .rightsections #Advertise section{
+   background-color: #f1f1f1;
+   text-align: center;
+   padding: 100px 0px;
+    }
+
+    /*Tags*/
+main #rightside .rightsections #Tags{
+    padding: 10px 20px 30px;
+} 
+main #rightside .rightsections #Tags span{
+    display: inline-block;
+    background-color: #f1f1f1c3;
+    padding: 0px 10px;
+    margin-top: 15px;
+    font-family: opensans;
+    font-size: 0.9rem;
+
+}
+main #rightside .rightsections #Tags span:first-child{
+    background-color: black;
+    color: white;
+
+} 
+
+/*Inspiration*/
+main #rightside .rightsections #Inspiration{
+
+}
+main #rightside .rightsections #Inspiration  div{
+    width: 50%;
+    padding: 10px;
+    float: left;
+    
+}
+
+/*Follow Me*/
+
+main #rightside .rightsections #FollowMe{
+    padding: 20px
+}
+main #rightside .rightsections #FollowMe a{
+    display: inline-block;
+    padding:3px ;
+    color: black;
+    font-size: 1.3rem ;
+
+
+}
+main #rightside .rightsections #FollowMe a:hover{
+    color: gray;
+}
+
+/*Subscribe*/
+main #rightside .rightsections #Subscribe{
+    padding: 20px;
+
+}
+main #rightside .rightsections #Subscribe p{
+    font-family: opensans;
+    font-size: 15px;
+    line-height: 23px;
+    margin-bottom: 15px;
+
+}
+main #rightside .rightsections #Subscribe input{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+   
+
+}
+main #rightside .rightsections #Subscribe button{
+    width: 100%;
+    background-color: #f44336;
+    color: white;
+    padding: 10px;
+    border: none;
+
+}
+main #rightside .rightsections #Subscribe button:hover{
+    background-color: silver;
+    color: black;
+}
+
+
+
+
+
+
+
+
+/*end rightside*/
+.clear{
+    content: " ";
+    clear: both;
+}
+/*end main*/
+
+/*start footer*/
+footer{
+    background: #616161;
+    padding: 50px;
+}
+footer > a{       /*footerالمباشر للينك هو ال  parentال */
+    background:black;
+    color: white ;
+    padding: 10px 20px;
+    border: none;
+    text-decoration: none;
+}
+footer p{
+    padding-top: 25px;
+    font-size:1.1rem ;
+    color:white ;
+
+}
+footer p a{
+    color: white;
+}
+/*end footer*/
+
+/*start subscribew*/
+#subscribew{
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    top: 0px;
+   visibility: hidden;
+   
+
+
+
+}
+#subscribew div{
+    width: 70%;
+    margin: auto;
+    margin-top: 100px;
+    padding: 30px;
+    background: white;
+
+}
+
+#subscribew #close{
+    float: right;
+   font-weight: bold;
+   border: none;
+   background-color: transparent;
+   font-size: 1.5rem;
+   padding: 10px 15px;
+
+}
+#subscribew #close:hover{
+   background-color: silver;
+   color: black;
+
+}
+
+
+
+#subscribew div h1{
+font-family: oswald;
+font-size: 35px;
+font-weight: normal;
+
+}
+#subscribew div p{
+    font-family: opensans;
+    margin-bottom: 20px;
+
+}
+
+#subscribew div input{
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 20px;
+
+
+}
+#subscribew div  #Subscribeb{
+    background-color: #f44336;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 20px;
+
+}
+#subscribew div  #Subscribeb:hover{
+    background-color: silver;
+    color: black;
+}
+
+
+
+/*end subscribew*/
+
+
+
+@media screen and (max-width: 900px) {
+
+    body{
+        height: 4200px;
+        
+    }
+    header #aboveimg{
+        
+        top:15%;
+        
+    
+    }
+
+}
+@media screen and (max-width: 600px) {
+
+    body{
+        height: 5690px;
+        
+    }
+
+    header #aboveimg{
+        
+        top:15%;
+        
+    
+    }
+   
+    header #aboveimg h2{
+        font-size: 1.5rem;
+        line-height:30px ;
+       
+    }
+    header #aboveimg h1{
+        font-size: 2.5rem;
+        line-height:45px ;
+    
+    }
+    header #aboveimg button{
+        padding:12px 22px ;
+      
+        
+    }
+    main #leftside, main #rightside{
+        float: none;
+        width: 100%;
+        
+    }
+
+}   
+    
+
